@@ -41,7 +41,7 @@ userController.post("/login", async (req, res) => {
   if (!userExist) {
     return res
       .status(400)
-      .json({ message: "User does not exist please signup first!" });
+      .json({ message: "User doesn't exist please signup first!" });
   }
 
   bcrypt.compare(password, userExist.password, function (err, result) {
