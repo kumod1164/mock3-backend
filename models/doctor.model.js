@@ -16,6 +16,6 @@ const doctorSchema = mongoose.Schema({
   fee: { type: Number, required: true },
 });
 
-const EmployeeModel = mongoose.model("doctor", doctorSchema);
+const DoctorModel = mongoose.model("doctor", doctorSchema);
 
-module.exports = { EmployeeModel };
+module.exports = { DoctorModel };
